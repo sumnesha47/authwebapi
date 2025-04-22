@@ -37,9 +37,6 @@ namespace authwebapi.Controllers
                 Name = request.Name,
                 Email = request.Email,
                 Username = request.Username,
-                IsActive = true,
-                CreatedAt = DateTime.UtcNow,
-                UpdatedAt = DateTime.UtcNow
             };
 
             user.PasswordHash = _passwordHasher.HashPassword(user, request.Password);
