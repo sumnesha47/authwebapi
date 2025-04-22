@@ -1,6 +1,12 @@
-﻿using authwebapi.Models;
-using authwebapi.NewFolder;
+﻿using authwebapi.Dtos;
+using authwebapi.Models;
 using authwebapi.Repositories;
+using System.Security.Cryptography;
+using System.Text;
+using Microsoft.Extensions.Configuration;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace authwebapi.Services
 {

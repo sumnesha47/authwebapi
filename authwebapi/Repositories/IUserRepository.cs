@@ -4,8 +4,9 @@ namespace authwebapi.Repositories
 {
     public interface IUserRepository
     {
-        Task<User> GetByUsernameAsync(string username);
+        Task<User?> GetUserByEmailAsync(string email);
+        Task<User?> GetUserByUsernameAsync(string username);
         Task AddUserAsync(User user);
-        Task<IList<string>> GetUserRolesAsync(User user);
+        Task<bool> SaveChangesAsync();
     }
 }

@@ -1,4 +1,4 @@
-﻿namespace authwebapi.NewFolder
+﻿namespace authwebapi.Dtos
 {
     public class LoginDto
     {

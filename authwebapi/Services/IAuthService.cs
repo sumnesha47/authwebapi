@@ -1,4 +1,4 @@
-﻿using authwebapi.NewFolder;
+﻿using authwebapi.Dtos;
 
 namespace authwebapi.Services
 {
